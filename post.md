@@ -32,9 +32,13 @@ This week we'll explore...
 
 ## Project Step
 In order to start designing the circuit, we first needed to design a FSM (DFA-Deterministic Finite Automata), using a state transition diagram. We designed it in the way that if the stream x, ends in 00, then the circuit outputs and 1, and if it ends in anything else, in outputs a 0.
+
+-Below is the FSM.
 <img src="./assets/dfa.png" />
 
 Next we had to contruct a state table.
+
+-Below is the state table.
 <img src="./assets/statetable.png" />
 
 After we created a state table we need to the FSM to and state table to create a function table. This shows us the before and after values for signals in the circuit. It showa the signals that are sent to the J and K inputs. 
@@ -43,6 +47,8 @@ After we created a state table we need to the FSM to and state table to create a
 <img src="./assets/fun.png" />
 
 Next, after creating the function table we use the values from the table inorder to contruct k-maps to create our circuit.
+
+-Below are the k-maps constructed from the function table.
 <img src="./assets/J1.png" />
 <img src="./assets/K1.png" />
 <img src="./assets/J0.png" />
@@ -50,7 +56,11 @@ Next, after creating the function table we use the values from the table inorder
 <img src="./assets/F.png" />
 
 Finally, we use the k-maps to design and build the circuit.
+
+-Below is the logisim design of the circuit.
 <img src="./assets/photo.png" />
+
+-Below is the circuit buit on the breadboard.
 <img src="./assets/circuit.png" />
 
 ## Testing
